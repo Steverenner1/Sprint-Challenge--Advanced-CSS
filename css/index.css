@@ -186,6 +186,7 @@ header header {
   display: flex;
   justify-content: center;
 }
+
 header .header {
   display: flex;
   justify-content: center;
@@ -243,7 +244,8 @@ nav {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
-}
+  }
+  
 
 a {
   display:flex;
@@ -314,12 +316,61 @@ h1 {
     top:1px;
   }
   
-
-}
-
-
 .walk-img {
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .intro {
+    display:flex;
+    flex-direction:column;
+  }
+
+  .blast {
+    display:flex;
+    size: 120%;
+  }
+  .sky {
+    display:none;
+  }
+
+  .launch {
+    display:none;
+  }
+
+  .walk {
+    display:flex;
+    flex-direction:column-reverse;
+  }
+
+  .walk-img {
+    display:flex;
+    justify-content:center;
+  }
+
+  .btn {
+    display:flex;
+    text-align:center;
+  }
+
+  header nav a {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .visit-planets {
+    margin: 5%;
+  }
+
+
+
+  
+
+
+
 }
 
 
